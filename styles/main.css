@@ -28,8 +28,6 @@ main:after {
 .side-two {
   float: left;
   padding: 0.5em;
-  color: lemonchiffon;
-  width: 27.5%;
 }
 
 .side-one:before,
