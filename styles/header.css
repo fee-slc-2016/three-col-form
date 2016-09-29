@@ -4,6 +4,7 @@ header {
   border-bottom: 3px double rgb(64, 80, 89);
   background-color: rgb(24, 40, 49);
   font-family: Avenir, "Gill Sans", Skia, sans-serif;
+  font-variant: small-caps;
   font-weight: 700;
   color: rgb(12, 143, 143);
 }
