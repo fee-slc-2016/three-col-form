@@ -1,0 +1,77 @@
+/*
+Uses "Quick Tip: Solving the Equal Height Column Conundrum" solution:
+https://webdesign.tutsplus.com/tutorials/quick-tip-solving-the-equal-height-column-conundrum--cms-20403
+http://codepen.io/tutsplus/details/ZGQxVb
+*/
+
+
+main {
+  height: 100%;
+}
+
+main:before, main:after  {
+    content: " ";
+    display: table;
+}
+
+main:after {
+    clear: both;
+}
+
+.side-one, .side-one:before,
+.side-two, .side-two:before {
+  width: 27.5%;
+  background-color: rgb(64, 80, 89);
+}
+
+.side-one,
+.side-two {
+  float: left;
+  padding: 0.5em;
+  color: lemonchiffon;
+}
+
+.side-one:before,
+.side-two:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.side-one, .side-one:before {
+  border-right: 3px double rgb(64, 80, 89);
+}
+
+.side-one:before {
+  left: 0;
+}
+
+.side-two, .side-two:before {
+  border-left: 3px double rgb(64, 80, 89);
+}
+
+.side-two:before {
+  right: 0;
+}
+
+/* MAIN CENTER COLUMN */
+
+.highlight, .highlight:before {
+  width: calc(100% - 27.5%);
+}
+
+.highlight {
+  float: left;
+  padding: 0.5em;
+}
+
+.highlight:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  left: 27.5%;
+}

@@ -1,0 +1,38 @@
+/*
+color scheme based on:
+http://www.colourlovers.com/palette/51466/rubber_ducky_fleet
+*/
+
+html {
+  /* Basic background:
+       http://learnlayout.com/box-sizing.html;
+     Universal Box Sizing with Inheritance:
+       https://css-tricks.com/box-sizing/
+  */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: lemonchiffon;
+  background-color: #ccc;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+}
+
+.clear{
+  clear: both;
+}
