@@ -29,7 +29,7 @@ main:after {
   float: left;
   padding: 0.5em;
   color: lemonchiffon;
-  width: 30%;
+  width: 27.5%;
 }
 
 .side-one:before,
@@ -60,13 +60,12 @@ main:after {
 /* MAIN CENTER COLUMN */
 
 .highlight, .highlight:before {
-  width: calc(100% - 27.5%);
+  width: calc(100% - (27.5%*2));
 }
 
 .highlight {
   float: left;
   padding: 0.5em;
-  width: 30%;
 }
 
 .highlight:before {
