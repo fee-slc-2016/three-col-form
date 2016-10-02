@@ -55,7 +55,7 @@ main:after {
   right: 0;
 }
 
-/* MAIN CENTER COLUMN */
+/* MAIN CENTER COLUMN STYLE*/
 
 .highlight, .highlight:before {
   width: calc(100% - (27.5%*2));
